@@ -138,10 +138,7 @@ int rddat() {
                 
                     if (ti-last_ti>1) fprintf(newdat,"\n");
                
-                    //if (last_ti<t1) continue;
                     fprintf(newdat, "%lf %lf %lf\n", ti, la, lo);
-                    //printf("%lf %lf %lf\n", ti-last_ti, la, lo);
-                    //if (fabs(ti-last_ti)>1) printf("%lf\n", ti-last_ti);
                     last_ti = ti;
                 }
                 fprintf(newdat, "\n");
